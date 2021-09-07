@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBorderContext" prefHeight="505.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <TextField fx:id="txtUserName" layoutX="94.0" layoutY="156.0" prefHeight="31.0" prefWidth="215.0" />
+      <Label layoutX="94.0" layoutY="126.0" prefHeight="30.0" prefWidth="96.0" text="Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="194.0" prefHeight="30.0" prefWidth="96.0" text="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPassword" layoutX="94.0" layoutY="224.0" prefHeight="31.0" prefWidth="215.0" />
+      <Label layoutX="94.0" layoutY="255.0" prefHeight="30.0" prefWidth="166.0" text="Forgot password?">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="94.0" layoutY="302.0" onAction="#singIn" prefHeight="38.0" prefWidth="215.0" style="-fx-background-color: #C1C600; -fx-background-radius: ;" text="Sign In" textFill="#fcf7f7">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="68.0" layoutY="47.0" prefHeight="68.0" prefWidth="272.0" text="MEGA Market" textFill="#0c390d">
+         <font>
+            <Font name="Arial Narrow Bold" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="68.0" fitWidth="272.0" layoutX="76.0" layoutY="397.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/bxh.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="142.0" layoutY="367.0" prefHeight="30.0" prefWidth="123.0" text="Sign in with">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

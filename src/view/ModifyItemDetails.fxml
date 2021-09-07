@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="modifyItemDetailsOnAction" prefHeight="563.0" prefWidth="378.0" style="-fx-background-color: #CBCE91FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyItemDetailsController">
+   <children>
+      <TextField fx:id="txtItemCode" layoutX="37.0" layoutY="116.0" onAction="#selectItemOnAction" prefHeight="41.0" prefWidth="283.0" promptText="Item Code" />
+      <TextField fx:id="txtDescription" layoutX="37.0" layoutY="175.0" prefHeight="41.0" prefWidth="283.0" promptText="Description" />
+      <TextField fx:id="txtPackSize" layoutX="37.0" layoutY="238.0" prefHeight="41.0" prefWidth="283.0" promptText="Pack Size" />
+      <TextField fx:id="txtUnitPrice" layoutX="37.0" layoutY="304.0" prefHeight="41.0" prefWidth="283.0" promptText="Unit Price" />
+      <TextField fx:id="txtQtyOnHand" layoutX="37.0" layoutY="368.0" prefHeight="41.0" prefWidth="283.0" promptText="Qty On Hand" />
+      <JFXButton buttonType="RAISED" layoutX="133.0" layoutY="488.0" onAction="#modifyItemDetailsOnAction" prefHeight="41.0" prefWidth="187.0" style="-fx-background-color: #000000;" text="Modify Item Details" textFill="#fcf7f7">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Text layoutX="27.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Item Details" wrappingWidth="247.00000807642937">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="274.0" layoutY="31.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/modi.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtDiscount" layoutX="37.0" layoutY="424.0" prefHeight="41.0" prefWidth="283.0" promptText="Discount" />
+   </children>
+</AnchorPane>

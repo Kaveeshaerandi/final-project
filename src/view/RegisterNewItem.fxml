@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="registerNewItemContext" prefHeight="551.0" prefWidth="393.0" style="-fx-background-color: #CBCE91FF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterNewItemController">
+   <children>
+      <Text fill="#252323" layoutX="39.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register New Item" wrappingWidth="266.7890625">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtItemCode" layoutX="39.0" layoutY="94.0" prefHeight="41.0" prefWidth="289.0" promptText="Item Code" />
+      <TextField fx:id="txtDescription" layoutX="39.0" layoutY="158.0" prefHeight="41.0" prefWidth="289.0" promptText="Description" />
+      <TextField fx:id="txtPackSize" layoutX="39.0" layoutY="225.0" prefHeight="41.0" prefWidth="289.0" promptText="Pack Size" />
+      <TextField fx:id="txtUnitPrice" layoutX="39.0" layoutY="291.0" prefHeight="41.0" prefWidth="289.0" promptText="Unit Price" />
+      <TextField fx:id="txtQtyOnHand" layoutX="39.0" layoutY="357.0" prefHeight="41.0" prefWidth="289.0" promptText="Qty On Hand" />
+      <JFXButton buttonType="RAISED" layoutX="157.0" layoutY="471.0" onAction="#registerNewItemOnAction" prefHeight="41.0" prefWidth="171.0" style="-fx-background-color: #000000;" text="Register New Item" textFill="#fcf7f7">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="54.0" fitWidth="67.0" layoutX="279.0" layoutY="17.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/tgbj.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtDiscount" layoutX="39.0" layoutY="412.0" prefHeight="41.0" prefWidth="289.0" promptText="Discount" />
+   </children>
+</AnchorPane>

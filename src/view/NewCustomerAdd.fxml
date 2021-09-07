@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="newCustomerAddForm" prefHeight="635.0" prefWidth="534.0" style="-fx-background-color: #D4D4D4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewCustomerAddController">
+   <children>
+      <AnchorPane fx:id="addCustomer" layoutX="160.0" layoutY="80.0" prefHeight="512.0" prefWidth="337.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="40.0" layoutY="27.0" prefHeight="42.0" prefWidth="231.0" text="Add Customer Form" textFill="#0d0d0d">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtId" layoutX="40.0" layoutY="90.0" prefHeight="31.0" prefWidth="221.0" promptText="Customer Id" />
+            <ComboBox fx:id="cmbTitle" layoutX="40.0" layoutY="135.0" onAction="#addCustIdOnAction" prefHeight="31.0" prefWidth="221.0" promptText="Customer Title" />
+            <TextField fx:id="txtName" layoutX="40.0" layoutY="183.0" prefHeight="31.0" prefWidth="221.0" promptText="Customer Name" />
+            <TextField fx:id="txtAddress" layoutX="40.0" layoutY="231.0" prefHeight="31.0" prefWidth="221.0" promptText="Customer Address" />
+            <TextField fx:id="txtCity" layoutX="40.0" layoutY="278.0" prefHeight="31.0" prefWidth="221.0" promptText="City" />
+            <TextField fx:id="txtProvince" layoutX="40.0" layoutY="321.0" prefHeight="31.0" prefWidth="221.0" promptText="Province" />
+            <TextField fx:id="txtPostalCode" layoutX="40.0" layoutY="369.0" opacity="0.95" prefHeight="31.0" prefWidth="221.0" promptText="Postal Code" />
+            <JFXButton buttonType="RAISED" layoutX="76.0" layoutY="419.0" onAction="#addOnAction" prefHeight="42.0" prefWidth="185.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="Add Customer" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="updateCustomerForm" layoutX="164.0" layoutY="80.0" prefHeight="512.0" prefWidth="337.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;" visible="false">
+         <children>
+            <Label layoutX="40.0" layoutY="14.0" prefHeight="42.0" prefWidth="275.0" text="Update Customer Form" textFill="#141313">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCustId" layoutX="42.0" layoutY="85.0" onAction="#idOnAction" opacity="0.83" prefHeight="31.0" prefWidth="237.0" promptText="Customer Id" />
+            <ComboBox fx:id="cmbcustTitle" layoutX="42.0" layoutY="135.0" prefHeight="31.0" prefWidth="237.0" promptText="Customer Title" />
+            <TextField fx:id="txtCustName" layoutX="42.0" layoutY="180.0" opacity="0.83" prefHeight="31.0" prefWidth="237.0" promptText="Customer Name" />
+            <TextField fx:id="txtCustAddress" layoutX="42.0" layoutY="228.0" opacity="0.83" prefHeight="31.0" prefWidth="237.0" promptText="Customer Address" />
+            <TextField fx:id="txtCustCity" layoutX="40.0" layoutY="275.0" opacity="0.83" prefHeight="31.0" prefWidth="237.0" promptText="City" />
+            <TextField fx:id="txtCustProvince" layoutX="42.0" layoutY="320.0" opacity="0.83" prefHeight="31.0" prefWidth="237.0" promptText="Province" />
+            <TextField fx:id="txtPostal" layoutX="42.0" layoutY="366.0" opacity="0.83" prefHeight="31.0" prefWidth="237.0" promptText="Postal Code" />
+            <JFXButton buttonType="RAISED" layoutX="148.0" layoutY="427.0" onAction="#updateOnAction" prefHeight="42.0" prefWidth="143.0" style="-fx-background-color: #000000;" text="UPDATE" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="deleteCustomerForm" layoutX="194.0" layoutY="80.0" prefHeight="512.0" prefWidth="320.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;" visible="false">
+         <children>
+            <Label layoutX="19.0" layoutY="24.0" prefHeight="42.0" prefWidth="275.0" text="Delete Customer Form" textFill="#1b1919">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtdelId" layoutX="32.0" layoutY="88.0" opacity="0.83" prefHeight="31.0" prefWidth="249.0" promptText="Customer Id" />
+            <ComboBox fx:id="cmbDelTitle" layoutX="32.0" layoutY="134.0" prefHeight="31.0" prefWidth="249.0" promptText="Customer Title" />
+            <TextField fx:id="txtDelName" layoutX="32.0" layoutY="179.0" opacity="0.83" prefHeight="31.0" prefWidth="249.0" promptText="Customer Name" />
+            <TextField fx:id="txtDelAddress" layoutX="32.0" layoutY="225.0" opacity="0.83" prefHeight="31.0" prefWidth="249.0" promptText="Customer Address" />
+            <TextField fx:id="txtDelCity" layoutX="32.0" layoutY="274.0" opacity="0.83" prefHeight="31.0" prefWidth="249.0" promptText="City" />
+            <TextField fx:id="txtDelProvince" layoutX="32.0" layoutY="326.0" opacity="0.83" prefHeight="31.0" prefWidth="249.0" promptText="Province" />
+            <TextField fx:id="txtDelPostal" layoutX="32.0" layoutY="373.0" opacity="0.83" prefHeight="31.0" prefWidth="249.0" promptText="Postal Code" />
+            <JFXButton buttonType="RAISED" layoutX="144.0" layoutY="426.0" onAction="#deleteOnAction" prefHeight="42.0" prefWidth="137.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="DELETE" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="addNew" buttonType="RAISED" layoutX="35.0" layoutY="120.0" onAction="#addNewCustomer" prefHeight="81.0" prefWidth="92.0" style="-fx-background-color: #C1C600; -fx-background-radius: 10;" text="." textFill="#252121">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="42.0" fitWidth="58.0" layoutX="52.0" layoutY="140.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/modi.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="update" buttonType="RAISED" layoutX="35.0" layoutY="262.0" onAction="#updateCustomer" prefHeight="81.0" prefWidth="92.0" style="-fx-background-color: #C1C600; -fx-background-radius: 10;" text="." textFill="#252121">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="51.0" fitWidth="58.0" layoutX="52.0" layoutY="277.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/tgbj.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="delete" buttonType="RAISED" layoutX="35.0" layoutY="415.0" onAction="#deleteCustomer" prefHeight="81.0" prefWidth="92.0" style="-fx-background-color: #C1C600; -fx-background-radius: 10;" text="." textFill="#252121">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView blendMode="COLOR_BURN" fitHeight="51.0" fitWidth="58.0" layoutX="52.0" layoutY="430.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/hdfhsf.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="585.0" onAction="#back" prefHeight="24.0" prefWidth="81.0" style="-fx-background-color: #C1C600; -fx-background-radius: 10;" text="&lt;&lt;" textFill="#1b1515">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="179.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Form" wrappingWidth="249.00000799819827">
+         <font>
+            <Font name="Dubai Light" size="27.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Customer" wrappingWidth="101.6708984375" />
+      <Text layoutX="22.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Customer" wrappingWidth="117.6708984375" />
+      <Text layoutX="30.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Customer" wrappingWidth="129.6708984375" />
+      <Separator layoutX="149.0" layoutY="53.0" prefHeight="11.0" prefWidth="237.0" />
+   </children>
+</AnchorPane>

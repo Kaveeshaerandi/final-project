@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="systemAdministratorContext" prefHeight="664.0" prefWidth="822.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemAdministratorController">
+   <children>
+      <Label layoutX="6.0" layoutY="9.0" opacity="0.47" prefHeight="646.0" prefWidth="358.0" style="-fx-background-color: #2C5F2D; -fx-background-radius: 15;" />
+      <Button layoutX="100.0" layoutY="256.0" mnemonicParsing="false" onAction="#systemReportOnAction" prefHeight="56.0" prefWidth="298.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff;" text="System Report">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="24.0" layoutY="24.0" onMouseClicked="#goToDashBoard" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/igbh.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#131413" layoutX="21.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Out" wrappingWidth="78.6708984375">
+         <font>
+            <Font name="Microsoft Himalaya" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#064a08" layoutX="618.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEGA Market" wrappingWidth="191.6708984375">
+         <font>
+            <Font name="Microsoft Himalaya" size="47.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblDate" layoutX="656.0" layoutY="50.0" prefHeight="40.0" prefWidth="154.0" text="2021-08-19" textFill="#19570f">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="690.0" layoutY="98.0" prefHeight="31.0" prefWidth="87.0" text="22.12.09">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="439.0" layoutY="168.0" onAction="#registerItem" prefHeight="116.0" prefWidth="275.0" style="-fx-background-color: #C1C600; -fx-background-radius: 10;" text="Register New Item            ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView blendMode="COLOR_BURN" fitHeight="67.0" fitWidth="72.0" layoutX="632.0" layoutY="193.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/downlommad.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="439.0" layoutY="313.0" onAction="#updateCustomer" prefHeight="116.0" prefWidth="275.0" style="-fx-background-color: #C1C600; -fx-background-radius: 10;" text="Modify Item Details              " textFill="#252121">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="67.0" fitWidth="72.0" layoutX="632.0" layoutY="338.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/jdh.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="445.0" layoutY="458.0" onAction="#deleteCustomer" prefHeight="116.0" prefWidth="275.0" style="-fx-background-color: #C1C600; -fx-background-radius: 10;" text="Remove Items           " textFill="#030101">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView blendMode="COLOR_BURN" fitHeight="67.0" fitWidth="72.0" layoutX="632.0" layoutY="483.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/hdfhsf.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="439.0" layoutY="98.0" mnemonicParsing="false" onAction="#manageItemsOnAction" prefHeight="47.0" prefWidth="226.0" style="-fx-background-radius: 20; -fx-background-color: #ffffff;" text="Manage Items">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <ImageView blendMode="COLOR_BURN" fitHeight="257.0" fitWidth="258.0" layoutX="57.0" layoutY="358.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/xxn.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

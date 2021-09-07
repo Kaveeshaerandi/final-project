@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageItemContext" prefHeight="674.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageItemsController">
+   <children>
+      <AnchorPane fx:id="newCustomerAddForm" layoutY="-5.0" prefHeight="674.0" prefWidth="757.0">
+         <children>
+            <ImageView fitHeight="681.0" fitWidth="757.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/vg.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="addCustomer" layoutX="328.0" layoutY="18.0" prefHeight="612.0" prefWidth="399.0" style="-fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="68.0" layoutY="14.0" prefHeight="42.0" prefWidth="203.0" text="Register New Item" textFill="#0d0d0d">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtItemId" layoutX="68.0" layoutY="105.0" opacity="0.6" prefHeight="34.0" prefWidth="233.0" promptText="Item Code" style="-fx-background-color: #000000;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton buttonType="RAISED" layoutX="158.0" layoutY="416.0" onAction="#registerOnAction" prefHeight="42.0" prefWidth="143.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" text="Register">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <TextField fx:id="txtDescription" layoutX="68.0" layoutY="165.0" opacity="0.6" prefHeight="34.0" prefWidth="233.0" promptText="Description" style="-fx-background-color: #000000;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtPackSize" layoutX="68.0" layoutY="228.0" opacity="0.6" prefHeight="34.0" prefWidth="233.0" promptText="Pack Size" style="-fx-background-color: #000000;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtUnitPrice" layoutX="68.0" layoutY="296.0" opacity="0.6" prefHeight="34.0" prefWidth="233.0" promptText="Unit Price" style="-fx-background-color: #000000;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtId1txtQtyOnHand" layoutX="68.0" layoutY="358.0" opacity="0.6" prefHeight="34.0" prefWidth="233.0" promptText="Qty On Hand" style="-fx-background-color: #000000;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="updateCustomerForm" layoutX="328.0" layoutY="17.0" prefHeight="612.0" prefWidth="399.0" style="-fx-background-color: #2C5F2D;" visible="false">
+               <children>
+                  <Label layoutX="60.0" layoutY="14.0" prefHeight="42.0" prefWidth="275.0" text="Update Customer Form" textFill="#f2ecec">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCustId" layoutX="40.0" layoutY="102.0" onAction="#idOnAction" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="Customer Id" />
+                  <ComboBox fx:id="cmbcustTitle" layoutX="40.0" layoutY="166.0" prefHeight="42.0" prefWidth="323.0" promptText="Customer Title" />
+                  <TextField fx:id="txtCustName" layoutX="40.0" layoutY="231.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="Customer Name" />
+                  <TextField fx:id="txtCustAddress" layoutX="40.0" layoutY="291.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="Customer Address" />
+                  <TextField fx:id="txtCustCity" layoutX="40.0" layoutY="351.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="City" />
+                  <TextField fx:id="txtCustProvince" layoutX="40.0" layoutY="414.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="Province" />
+                  <TextField fx:id="txtPostal" layoutX="40.0" layoutY="475.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="Postal Code" />
+                  <JFXButton buttonType="RAISED" layoutX="218.0" layoutY="537.0" onAction="#updateOnAction" prefHeight="42.0" prefWidth="143.0" style="-fx-background-color: #000000;" text="UPDATE" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="deleteCustomerForm" layoutX="328.0" layoutY="18.0" prefHeight="612.0" prefWidth="399.0" style="-fx-background-color: #2C5F2D;" visible="false">
+               <children>
+                  <Label layoutX="60.0" layoutY="14.0" prefHeight="42.0" prefWidth="275.0" text="Delete Customer Form" textFill="#f2ecec">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtdelId" layoutX="40.0" layoutY="102.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="Customer Id" />
+                  <ComboBox fx:id="cmbDelTitle" layoutX="40.0" layoutY="166.0" prefHeight="42.0" prefWidth="323.0" promptText="Customer Title" />
+                  <TextField fx:id="txtDelName" layoutX="40.0" layoutY="231.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="Customer Name" />
+                  <TextField fx:id="txtDelAddress" layoutX="40.0" layoutY="291.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="Customer Address" />
+                  <TextField fx:id="txtDelCity" layoutX="40.0" layoutY="351.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="City" />
+                  <TextField fx:id="txtDelProvince" layoutX="40.0" layoutY="414.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="Province" />
+                  <TextField fx:id="txtDelPostal" layoutX="40.0" layoutY="475.0" opacity="0.83" prefHeight="42.0" prefWidth="323.0" promptText="Postal Code" />
+                  <JFXButton buttonType="RAISED" layoutX="227.0" layoutY="536.0" onAction="#deleteOnAction" prefHeight="42.0" prefWidth="137.0" style="-fx-background-color: #000000;" text="DELETE" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <JFXButton blendMode="COLOR_BURN" buttonType="RAISED" layoutX="32.0" layoutY="107.0" onAction="#registerItem" prefHeight="116.0" prefWidth="275.0" style="-fx-background-color: FD5DA8; -fx-background-radius: 10;" text="Register New Item            " textFill="#252121">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView blendMode="COLOR_BURN" fitHeight="67.0" fitWidth="72.0" layoutX="223.0" layoutY="132.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/downlommad.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="update" blendMode="COLOR_BURN" buttonType="RAISED" layoutX="32.0" layoutY="265.0" onAction="#updateCustomer" prefHeight="116.0" prefWidth="275.0" style="-fx-background-color: FF8B00; -fx-background-radius: 10;" text="Update Customer           " textFill="#252121">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="67.0" fitWidth="72.0" layoutX="223.0" layoutY="291.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/jdh.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="delete" blendMode="COLOR_BURN" buttonType="RAISED" layoutX="32.0" layoutY="418.0" onAction="#deleteCustomer" prefHeight="116.0" prefWidth="275.0" style="-fx-background-color: B284BE; -fx-background-radius: 10;" text="Delete Customer               " textFill="#252121">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView blendMode="COLOR_BURN" fitHeight="67.0" fitWidth="72.0" layoutX="215.0" layoutY="451.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/hdfhsf.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="32.0" layoutY="594.0" onAction="#back" prefHeight="42.0" prefWidth="88.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" text="&lt;&lt;" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
