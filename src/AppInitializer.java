@@ -23,6 +23,7 @@ public class AppInitializer extends Application {
         primaryStage.setTitle("Mega Market");
         //primaryStage.setLocationRelativeTo(null);
        // primaryStage.setFullScreen(true);
+	//comment
         primaryStage.show();
     }
 }
